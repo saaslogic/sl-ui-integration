@@ -1,0 +1,44 @@
+.btn-rounded {
+border-radius: 30px;
+}
+
+// .planHeader{
+// font-size: 1.5rem;
+// color: rgb(5, 24, 49);
+// // background-color:#2a96d3 !important;
+// }
+
+
+.pricing-card-title{
+    color: #193B67;
+    // font-family:Open Sans;
+    font-weight: 500;
+ }
+
+ .pricing-card-title1{
+
+    color: #193B67;
+    // font-family:Open Sans;
+    font-weight: 400;
+ }
+
+ .zoom {   
+    transition: transform 0.75s; /* Animation */   
+  }
+  .zoom:hover {
+    transform: scale(1.05); 
+    z-index: 1080;
+    border-color: #f9b50a;
+    border-width: thick;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+.price{
+   margin-top: 0px !important;
+   padding-top: 0px !important;
+}
+
+hr {  
+   opacity: 0.10;
+}
