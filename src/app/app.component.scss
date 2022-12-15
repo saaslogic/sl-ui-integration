@@ -1,0 +1,194 @@
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;      
+}
+nav a {   
+  font-size: 1.2rem !important;
+  font-weight: 450;
+  transition: all .3s ease-in-out
+}
+nav a:hover {
+  color: #2a96d3 !important;
+}
+
+.btn2 {
+  color: #fff;
+  font-weight: 400;
+  background: #2a96d3;
+}
+.btn1:hover 
+ {
+    color: #fff;
+    font-weight: 400;
+    background-color: #2a96d3 !important;
+  }
+.btn1 {
+    color: #fff;
+    background-color: #f9b50a;
+}
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 400;
+    margin-top: 1rem;
+    border-radius: 0;
+    white-space: nowrap;
+    letter-spacing: .25px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.pricing-section{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.get-in-touch {
+    background-color: rgb(48, 163, 201);
+    color: white;
+}
+
+.toolbar {
+    min-height: 3rem;
+}
+
+#wallSection {
+    background-position: 40%
+}
+
+@media(min-width: 768px) {
+    #wallSection {
+        background-position: 10%
+    }
+}
+
+#wallSection .innerSection {
+    height: 70vh;
+    max-height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;  
+}
+
+@media(min-width: 768px) {
+    #wallSection .innerSection {
+        align-items: center;
+        height: 100vh
+    }
+}
+
+#wallSection .innerSection article {
+    max-width: 600px
+}
+
+#wallSection .innerSection article .title {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+@media(min-width: 768px) {
+    #wallSection .innerSection article p {
+        font-size: 1.25rem
+    }
+}
+
+#Features {
+    background-color: #fcfcfc
+}
+
+#Features .titleDiv {
+    text-align: center;
+    margin-bottom: 2.441rem
+}
+
+@media(min-width: 768px) {
+    #Features .titleDiv {
+        margin-bottom: 3.052rem
+    }
+}
+
+#Features .titleDiv .heading {
+    margin: 0 auto
+}
+
+#Features .titleDiv p {
+    color: #5d5e5f
+}
+
+@media(min-width: 768px) {
+    #Features .titleDiv p {
+        font-size: 1.25rem
+    }
+}
+
+#Features article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+#Features article .card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.441rem
+}
+
+@media(min-width: 768px) {
+    #Features article .card {
+        width: 48%
+    }
+}
+
+@media(min-width: 1024px) {
+    #Features article .card {
+        width: 32%
+    }
+}
+
+#Features article .card img {
+    width: 3rem;
+    margin: 0 auto
+}
+
+#Features article .card .heading {
+    margin-top: 1rem
+}
+
+#Features article .card p {
+    color: #5d5e5f;
+    line-height: 1.6
+}
+
+
+
+.heading {
+    margin: 0;
+    max-width: 600px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+#Features article .card p {
+    color: #5d5e5f;
+    line-height: 1.6;
+}

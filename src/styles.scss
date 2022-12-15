@@ -1,0 +1,2899 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  // font-family: "Poppins",sans-serif !important;
+  font-family: 'Open Sans' !important; 
+  font-size: 1rem !important;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #707070;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 1px
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebedf3;
+  border-radius: 3px;
+  cursor: grab
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ebedf3;
+  cursor: grab
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: relative;
+  outline-style: none;
+  cursor: context-menu
+}
+
+*:before {
+  font-family: inherit
+}
+
+*::after {
+  font-family: inherit
+}
+
+html {
+  width: 100vw;
+  max-width: 100%;
+  display: block;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html {
+  font-size: 15px
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: calc(0.0638297872vw + 14.8085106383px)
+  }
+}
+
+@media screen and (min-width: 5000px) {
+  html {
+    font-size: 18px
+  }
+}
+
+html .scrollTopIntro {
+  top: -100% !important
+}
+
+html .scrollBottomIntro {
+  bottom: -100% !important
+}
+
+html .bodyIntro {
+  height: 100vh !important;
+  overflow: hidden !important
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  color: #101011;
+  background-color: #fff;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none
+}
+
+html body .topMargin {
+  margin-top: 60px
+}
+
+html body .tabMenuSection {
+  width: 100%;
+  overflow: hidden
+}
+
+html body .tabMenuSection .tabMenuNav {
+  width: 100%;
+  display: inline-block
+}
+
+html body .tabMenuSection .tabMenuNav .activeTabMenu {
+  color: #eaedf7 !important
+}
+
+html body .tabMenuSection .tabMenuNav .activeTabMenu::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #eaedf7
+}
+
+html body .tabMenuSection .tabMenuNav .tabMenu {
+  display: inline-block;
+  color: #909294;
+  font-size: .64rem;
+  font-weight: 500;
+  padding: .5rem;
+  padding-bottom: .75rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html body .tabMenuSection .tabMenuNav .tabMenu:hover {
+  color: #101011
+}
+
+html body .tabMenuSection .tabBarWrapper {
+  width: 100%;
+  display: flex
+}
+
+html body .tabMenuSection .tabBarWrapper .tabBarSlide {
+  width: 100%;
+  min-width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap
+}
+
+html body .overflowHide {
+  overflow: hidden !important
+}
+
+html body .mobHide {
+  display: none !important
+}
+
+@media(min-width: 1024px) {
+  html body .mobHide {
+    display: inline-block !important
+  }
+}
+
+html body .pcHide {
+  display: inline-block !important
+}
+
+@media(min-width: 1024px) {
+  html body .pcHide {
+    display: none !important
+  }
+}
+
+html body .pcOnly {
+  display: none !important
+}
+
+@media(min-width: 1024px) {
+  html body .pcOnly {
+    display: block !important
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .mobOnly {
+    display: none !important
+  }
+}
+
+html body .m0 {
+  margin: 0 !important
+}
+
+html body .p0 {
+  padding: 0 !important
+}
+
+html body img {
+  width: 100%;
+  display: block;
+  height: intrinsic;
+  image-rendering: -webkit-optimize-contrast
+}
+
+html body .bgCoverTop {
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+html body .bgCover {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+html body .bText {
+  font-weight: 700
+}
+
+html body .nText {
+  font-weight: 400
+}
+
+html body .lText {
+  font-weight: 300
+}
+
+html body a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html body button,
+html body [role=button] {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+html body button:focus,
+html body [role=button]:focus {
+  outline: 0
+}
+
+html body li {
+  list-style-type: none
+}
+
+html body p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  line-height: 1.5
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0
+}
+
+html body h1 {
+  font-size: 1.953rem;
+  font-weight: 700;
+  margin-top: 1.953rem
+}
+
+@media(min-width: 568px) {
+  html body h1 {
+    font-size: 2.441rem;
+    margin-top: 2.441rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body h1 {
+    font-size: 3.052rem;
+    margin-top: 3.052rem
+  }
+}
+
+html body h2 {
+  font-size: 1.563rem;
+  font-weight: 700;
+  margin-top: 1.563rem
+}
+
+@media(min-width: 568px) {
+  html body h2 {
+    font-size: 1.953rem;
+    margin-top: 1.953rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body h2 {
+    font-size: 2.441rem;
+    margin-top: 2.441rem
+  }
+}
+
+html body h3 {
+  font-size: 1.563rem;
+  font-weight: 500;
+  margin-top: 1.563rem
+}
+
+html body h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.25rem
+}
+
+html body h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem
+}
+
+html body .bText {
+  font-weight: 500 !important
+}
+
+html body .tableSection {
+  width: 100%
+}
+
+html body .tableSection .tableDiv {
+  width: 100%;
+  padding-bottom: 2.441rem
+}
+
+html body .tableSection .tableDiv::-webkit-scrollbar {
+  width: 8px;
+  height: 1px
+}
+
+@media(min-width: 1024px) {
+  html body .tableSection .tableDiv::-webkit-scrollbar {
+    height: 10px
+  }
+}
+
+html body .tableSection .tableDiv::-webkit-scrollbar-track {
+  background-color: #fff
+}
+
+html body .tableSection .tableDiv::-webkit-scrollbar-thumb {
+  background: #ebedf3;
+  border-radius: .25rem
+}
+
+html body .tableSection .tableDiv::-webkit-scrollbar-thumb:window-inactive {
+  background: #ebedf3
+}
+
+html body .tableSection .tableDiv table {
+  width: 100%;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #fcfcfc
+}
+
+html body .tableSection .tableDiv table tr {
+  display: table-row;
+  border-bottom: 1px solid #f8f8ff
+}
+
+html body .tableSection .tableDiv table tr:nth-child(even) {
+  background-color: #fbfcff
+}
+
+html body .tableSection .tableDiv table tr th,
+html body .tableSection .tableDiv table tr td {
+  height: 50px;
+  max-width: 150px;
+  text-align: left;
+  white-space: nowrap;
+  padding: .5rem .75rem
+}
+
+html body .tableSection .tableDiv table tr th {
+  color: #5d5e5f;
+  font-size: .512rem;
+  font-weight: 400
+}
+
+html body .tableSection .tableDiv table tr td {
+  font-size: .64rem
+}
+
+html body .tableSection .tableDiv table tr .moreBtn .moreIcon {
+  padding: .5rem .25rem;
+  border-radius: 0;
+  border: 1px solid #ebedf3;
+  background-color: #fff
+}
+
+html body .tableSection .tableDiv .avatarDiv {
+  display: flex
+}
+
+html body .tableSection .tableDiv .avatarDiv .avatar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  margin-right: .5rem;
+  overflow: hidden;
+  cursor: pointer
+}
+
+html body .tableSection .tableDiv .avatarDiv .avatar img {
+  cursor: pointer
+}
+
+html body .tableSection .tableDiv .actionTd {
+  width: 30px
+}
+
+html body .tableSection .tableDiv .slTd {
+  width: 30px
+}
+
+html body .tableSection .tableDiv .sText {
+  display: block;
+  color: #5d5e5f;
+  font-size: .512rem;
+  font-weight: 400;
+  margin-top: .5rem
+}
+
+html body .tableSection .tableDiv .bText {
+  display: block;
+  color: #242323;
+  font-size: .64rem;
+  font-weight: 500 !important;
+  margin-top: .5rem
+}
+
+html body .tableSection .tableDiv .tooltip:hover::before {
+  display: block
+}
+
+html body .tableSection .tableDiv .tooltip::before {
+  content: attr(data-text);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 200px;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 300;
+  padding: .5rem;
+  background-color: #242323;
+  border: 1px solid #ebedf3;
+  border-radius: 3px;
+  white-space: pre
+}
+
+html body .tableSection .tableDiv .textLimit {
+  overflow: hidden
+}
+
+html body .tableSection .tableDiv .cost {
+  display: inline-block
+}
+
+html body .tableSection .tableDiv .cost span {
+  text-align: right;
+  display: block;
+  font-weight: 400
+}
+
+html body .tableSection .tableDiv .cost span:nth-child(1) {
+  color: #242323;
+  font-size: .8rem;
+  font-weight: 500
+}
+
+html body .tableSection .tableDiv .cost span:nth-child(2) {
+  margin-top: .5rem;
+  color: #5d5e5f;
+  font-size: .512rem;
+  font-weight: 400;
+  padding-left: .25rem
+}
+
+html body .tableSection .tableDiv .cost span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 11px;
+  background-color: #4ac434;
+  border-radius: 0
+}
+
+html body .tableSection .tableDiv .datePeriod span {
+  display: block;
+  font-weight: 400;
+  padding-left: .7rem
+}
+
+html body .tableSection .tableDiv .datePeriod span::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -1.5px;
+  width: 4px;
+  height: 4px;
+  z-index: 1;
+  border-radius: 0
+}
+
+html body .tableSection .tableDiv .datePeriod span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ebedf3
+}
+
+html body .tableSection .tableDiv .datePeriod span:nth-child(1)::after {
+  background-color: #909294
+}
+
+html body .tableSection .tableDiv .datePeriod span:nth-child(2) {
+  margin-top: .25rem
+}
+
+html body .tableSection .tableDiv .datePeriod span:nth-child(2)::after {
+  background-color: #242323
+}
+
+html body .tableSection .tableDiv .btnDiv {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  border: 1px solid #ebedf3;
+  border-radius: 0;
+  background-color: #fff;
+  text-align: center;
+  padding: .25rem 0;
+  margin-left: 1rem;
+  cursor: pointer
+}
+
+html body .tableSection .tableDiv .btnDiv:hover .more {
+  color: #909294
+}
+
+html body .tableSection .tableDiv .btnDiv:hover .btnMenu {
+  display: block
+}
+
+html body .tableSection .tableDiv .btnDiv .more {
+  color: #5d5e5f;
+  font-size: 1.563rem;
+  cursor: pointer
+}
+
+html body .tableSection .tableFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1rem
+}
+
+@media(min-width: 768px) {
+  html body .tableSection .tableFooter {
+    flex-direction: row
+  }
+}
+
+html body .tableSection .tableFooter .text {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #242323;
+  font-size: .64rem;
+  font-weight: 400
+}
+
+html body .tableSection .tableFooter .text span {
+  font-size: .8rem;
+  font-weight: 600
+}
+
+html body .tableSection .tableFooter .pagination {
+  display: flex
+}
+
+html body .tableSection .tableFooter .pagination .activePage {
+  color: #fff !important;
+  background-color: #f9b50a !important
+}
+
+html body .tableSection .tableFooter .pagination li {
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  color: #242323;
+  font-size: .64rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: .5rem;
+  background-color: #fcfcfc;
+  border: 1px solid #ebedf3;
+  border-radius: 5px;
+  margin: 0 .25rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html body .tableSection .tableFooter .pagination li i {
+  cursor: pointer
+}
+
+html body .tableSection .tableFooter .pagination li:hover {
+  color: #f9b50a;
+  background-color: #ebedf3
+}
+
+html body .tableNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column
+}
+
+@media(min-width: 768px) {
+  html body .tableNav {
+    flex-direction: row
+  }
+}
+
+html body .tableNav .navDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+@media(min-width: 768px) {
+  html body .tableNav .navDiv {
+    margin: 0
+  }
+}
+
+html body .tableNav .navDiv ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+html body .tableNav .navDiv .navList {
+  margin: 0;
+  margin-right: 1rem !important
+}
+
+html body .tableNav .navDiv .inputDiv {
+  padding-top: 0
+}
+
+html body .tableNav .btn {
+  margin-top: 0
+}
+
+html body .tableNav .viewGrid {
+  display: flex
+}
+
+html body .tableNav .viewGrid a {
+  margin-left: .5rem;
+  color: #909294;
+  font-size: 2.441rem
+}
+
+html body .tableNav .download {
+  padding: .75rem 1rem;
+  margin: 0;
+  margin-left: auto !important
+}
+
+@media(min-width: 768px) {
+  html body .tableNav .download {
+    margin: 0 !important
+  }
+}
+
+html body #statusFilter {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #101011;
+  font-size: .512rem;
+  font-weight: 500;
+  padding: .75rem;
+  background-color: #fff;
+  border: 1px solid #eef0f7;
+  border-radius: .25rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html body #statusFilter:hover {
+  background-color: #fff;
+  border: 1px solid #4ac434
+}
+
+html body .btnDiv {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  border: 1px solid #ebedf3;
+  border-radius: 0;
+  background-color: #fff;
+  text-align: center;
+  padding: .25rem 0;
+  cursor: pointer
+}
+
+html body .btnDiv:hover .more {
+  color: #909294
+}
+
+html body .btnDiv:hover .btnMenu {
+  display: block
+}
+
+html body .btnDiv .more {
+  color: #5d5e5f;
+  font-size: 1.563rem;
+  cursor: pointer
+}
+
+html body .pageMargin {
+  padding-top: 130px !important
+}
+
+@media(min-width: 1024px) {
+  html body .pageMargin {
+    padding-top: 150px !important
+  }
+}
+
+html body .section {
+  height: auto;
+  width: 100%;
+  clear: both;
+  padding: 0 1rem
+}
+
+@media(min-width: 568px) {
+  html body .section {
+    padding: 0 1.3333rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body .section {
+    padding: 0 2.441rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .section {
+    padding: 0 3.052rem
+  }
+}
+
+@media(min-width: 1280px) {
+  html body .section {
+    padding: 0 4.768rem
+  }
+}
+
+html body .sectionMargin {
+  margin: 0 1rem
+}
+
+@media(min-width: 360px) {
+  html body .sectionMargin {
+    margin: 0 1.5rem
+  }
+}
+
+@media(min-width: 568px) {
+  html body .sectionMargin {
+    margin: 0 2.441rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body .sectionMargin {
+    margin: 0 3.815rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .sectionMargin {
+    margin: 0 3.815rem
+  }
+}
+
+@media(min-width: 1280px) {
+  html body .sectionMargin {
+    margin: 0 3.815rem
+  }
+}
+
+html body .sectionSpace {
+  padding-bottom: 2.441rem;
+  padding-top: 2.441rem
+}
+
+@media(min-width: 768px) {
+  html body .sectionSpace {
+    padding-bottom: 3.052rem;
+    padding-top: 3.052rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .sectionSpace {
+    padding-bottom: 3.815rem;
+    padding-top: 3.815rem
+  }
+}
+
+@media(min-width: 1280px) {
+  html body .sectionSpace {
+    padding-bottom: 4.768rem;
+    padding-top: 4.768rem
+  }
+}
+
+html body .sectionSpaceT {
+  padding-top: 2.441rem
+}
+
+@media(min-width: 568px) {
+  html body .sectionSpaceT {
+    padding-top: 2.441rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body .sectionSpaceT {
+    padding-top: 3.052rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .sectionSpaceT {
+    padding-top: 3.815rem
+  }
+}
+
+@media(min-width: 1280px) {
+  html body .sectionSpaceT {
+    padding-top: 4.768rem
+  }
+}
+
+html body .sectionSpaceB {
+  padding-bottom: 2.441rem
+}
+
+@media(min-width: 568px) {
+  html body .sectionSpaceB {
+    padding-bottom: 2.441rem
+  }
+}
+
+@media(min-width: 768px) {
+  html body .sectionSpaceB {
+    padding-bottom: 3.052rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html body .sectionSpaceB {
+    padding-bottom: 3.815rem
+  }
+}
+
+@media(min-width: 1280px) {
+  html body .sectionSpaceB {
+    padding-bottom: 4.768rem
+  }
+}
+
+html .messageBox {
+  width: 100%;
+  max-width: 600px;
+  font-size: .512rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-top: .5rem;
+  border-radius: .25rem
+}
+
+html .messageBox:empty {
+  padding: 0;
+  margin-top: 0
+}
+
+html .alert {
+  color: #ff8787;
+  background-color: #fff8f8;
+  padding: .5rem
+}
+
+html .success {
+  color: #4ac434;
+  background-color: #fafff8;
+  padding: .5rem
+}
+
+html .warning {
+  color: #ffc444;
+  background-color: #fffef8;
+  padding: .5rem
+}
+
+html .info {
+  color: #5d5e5f;
+  background-color: #f7faff;
+  padding: .5rem
+}
+
+html .note {
+  width: 100%;
+  max-width: 600px;
+  font-size: .512rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #242323;
+  padding: .5rem 0
+}
+
+html .note span {
+  color: #242323;
+  font-weight: 500
+}
+
+html .lgDiv {
+  width: 100%
+}
+
+html .mdDiv {
+  width: 100%
+}
+
+@media(min-width: 1024px) {
+  html .mdDiv {
+    width: 48.5%;
+    margin-right: .75%;
+    margin-left: .75%
+  }
+}
+
+html .smDiv {
+  width: 48.5%;
+  min-width: 100px;
+  margin-right: .75%;
+  margin-left: .75%
+}
+
+@media(min-width: 1024px) {
+  html .smDiv {
+    width: 31.5%
+  }
+}
+
+html .xsDiv {
+  width: 23.5%;
+  min-width: 100px;
+  margin-right: .75%;
+  margin-left: .75%
+}
+
+html .xxsDiv {
+  width: 18.5%;
+  min-width: 100px;
+  margin-right: .75%;
+  margin-left: .75%
+}
+
+html .btnSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+html .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 400;
+  margin-top: 1rem;
+  border-radius: 0;
+  white-space: nowrap;
+  letter-spacing: .25px;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden
+}
+
+html .btn i {
+  margin-left: .5rem;
+  line-height: .8;
+  cursor: pointer
+}
+
+html .btn img {
+  width: 20px;
+  margin-left: 1rem;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  cursor: pointer
+}
+
+html .btn span {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  cursor: pointer
+}
+
+html .btn::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 300%;
+  border-radius: 100%;
+  background-color: #f9b50a;
+  transform: translateY(100%);
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  cursor: pointer
+}
+
+html .btn1 {
+  color: #fff;
+  background-color: #f9b50a
+}
+
+html .btn1::before {
+  background-color: #2a96d3
+}
+
+html .btn1:hover::before {
+  transform: none
+}
+
+html .btn2 {
+  color: #fff;
+  font-weight: 400;
+  background: #2a96d3
+}
+
+html .btn2::before {
+  background: #f9b50a
+}
+
+html .btn2:hover::before {
+  transform: none
+}
+
+html .btn3 {
+  color: #f9b50a;
+  font-weight: 500;
+  border: 1px solid #ebedf3;
+  background: #fcfcfc
+}
+
+html .btn3::before {
+  background: #ebedf3
+}
+
+html .btn3:hover::before {
+  transform: none
+}
+
+html .btn4 {
+  color: #f9b50a;
+  background-color: #fff;
+  border: 1px solid #f9b50a
+}
+
+html .btn4:hover {
+  color: #2a96d3
+}
+
+html .btn5 {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff
+}
+
+html .btn5:hover {
+  color: #fff;
+  background-color: #2a96d3
+}
+
+html .iconBtn {
+  color: #f9b50a;
+  font-weight: 500;
+  border: 1px solid #ebedf3;
+  background: #fcfcfc
+}
+
+html .iconBtn::before {
+  background: #ebedf3
+}
+
+html .iconBtn span i {
+  margin: 0
+}
+
+html .iconBtn:hover::before {
+  transform: none
+}
+
+html .loader {
+  display: inline-block;
+  width: 15px;
+  height: 15px
+}
+
+html .loader::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  animation: loader1 .7s linear infinite
+}
+
+@keyframes loader1 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg)
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(360deg)
+  }
+}
+
+html .xsBtn {
+  font-size: .64rem;
+  padding: .5rem .65rem
+}
+
+html .smBtn {
+  font-size: .8rem;
+  padding: .5rem .75rem
+}
+
+html .mdBtn {
+  font-size: .9rem;
+  padding: .5rem 1rem
+}
+
+html .lgBtn {
+  font-size: 1rem;
+  padding: 1rem 1.953rem
+}
+
+html .xlBtn {
+  font-size: .8rem;
+  padding: .75rem 1.25rem
+}
+
+@media(min-width: 768px) {
+  html .xlBtn {
+    font-size: .9rem;
+    padding: 1rem 1.953rem
+  }
+}
+
+@media(min-width: 1024px) {
+  html .xlBtn {
+    font-size: 1.563rem;
+    padding: 1rem 1.953rem
+  }
+}
+
+html .xxlBtn {
+  font-size: 1.953rem;
+  padding: 1.25rem 1.953rem
+}
+
+html .xxxlBtn {
+  font-size: 2.441rem;
+  padding: 1.563rem 2.441rem
+}
+
+html .btnIcon {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .25rem
+}
+
+html .btnIcon a {
+  display: inline-block;
+  margin: .25rem
+}
+
+html .approveBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  background-color: #e7ffe7;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+ // background-image: url("../images/btn-approve.png")
+}
+
+html .approveBtn::before {
+  content: "Approve";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .approveBtn:hover {
+  background-color: #d4ffd4
+}
+
+html .approveBtn:hover::before {
+  display: block
+}
+
+html .rejectBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  background-color: #ffecec;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+ // background-image: url("../images/btn-reject.png")
+}
+
+html .rejectBtn::before {
+  content: "Reject";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .rejectBtn:hover::before {
+  display: block
+}
+
+html .cancelBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+ // background-image: url("../images/btn-cancel.png")
+}
+
+html .cancelBtn::before {
+  content: "Cancel";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .cancelBtn:hover::before {
+  display: block
+}
+
+html .deleteBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #f3f3f3;
+ // background-image: url("../images/btn-delete.png")
+}
+
+html .deleteBtn::before {
+  content: "Delete";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .deleteBtn:hover::before {
+  display: block
+}
+
+html .suspendBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  cursor: pointer;
+  background-position: center;
+  background-size: contain;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #fff;
+  border: 1px solid #ebedf3;
+ // background-image: url("../images/btn-suspend.png")
+}
+
+html .suspendBtn::before {
+  content: "Suspend";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .suspendBtn:hover::before {
+  display: block
+}
+
+html .activateBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #e7f9ff;
+ // background-image: url("../images/btn-activate.png")
+}
+
+html .activateBtn::before {
+  content: "Activate";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .activateBtn:hover::before {
+  display: block
+}
+
+html .editBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #fff6e4;
+  background-position: center;
+  background-size: contain;
+  padding: .5rem;
+ // background-image: url("../images/btn-edit.png")
+}
+
+html .editBtn::before {
+  content: "Edit";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  min-width: 80px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .editBtn:hover::before {
+  display: block
+}
+
+html .saveBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #fff;
+  background-position: center;
+  background-size: contain;
+ // background-image: url("../images/btn-save1.png")
+}
+
+html .saveBtn::before {
+  content: "Save";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  display: none;
+  min-width: 80px;
+  text-align: center;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .saveBtn:hover::before {
+  display: block
+}
+
+html .finishedBtn {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: .4rem;
+  border-radius: .2rem;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  background-color: #e7ebff;
+ // background-image: url("../images/btn-finished.png")
+}
+
+html .finishedBtn::before {
+  content: "Finished";
+  position: absolute;
+  bottom: -150%;
+  right: 0;
+  z-index: 110;
+  display: none;
+  min-width: 80px;
+  text-align: center;
+  color: #fff;
+  font-size: .512rem;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, .856);
+  padding: .45rem .5rem;
+  border-radius: .25rem 0 .25rem .25rem
+}
+
+html .finishedBtn:hover::before {
+  display: block
+}
+
+html .redStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #ffeeec;
+  color: #e63535
+}
+
+html .greenStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #ecffef;
+  border: 1px solid #b6f3b6;
+  color: #24b163
+}
+
+html .orangeStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #fff9ee;
+  border: 1px solid #f8e8cb;
+  color: #f60
+}
+
+html .blueStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #f2f5ff;
+  border: 1px solid #cbd7f8;
+  color: #3157ff
+}
+
+html .yellowStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #fffbf1;
+  border: 1px solid #f8f1cb;
+  color: #e9ab00
+}
+
+html .purpleStatus {
+  font-size: .512rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #f5f1ff;
+  border: 1px solid #e4cbf8;
+  color: #7a32ff
+}
+
+html .graySatus {
+  font-size: .512rem;
+  font-weight: 400;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  background-color: #edeff3;
+  color: #5d5e5f
+}
+
+html form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap
+}
+
+html form label {
+  position: absolute;
+  top: 5px;
+  left: .5rem;
+  z-index: 1;
+  display: block;
+  white-space: nowrap;
+  color: #242323;
+  background-color: #fff;
+  font-size: .64rem;
+  font-weight: 500;
+  padding: .25rem;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+html form .inputDiv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  margin-bottom: .5rem
+}
+
+html form .inputDiv input[type=date],
+html form .inputDiv input[type=datetime-local],
+html form .inputDiv input[type=email],
+html form .inputDiv input[type=file],
+html form .inputDiv input[type=hidden],
+html form .inputDiv input[type=month],
+html form .inputDiv input[type=number],
+html form .inputDiv input[type=password],
+html form .inputDiv input[type=range],
+html form .inputDiv input[type=search],
+html form .inputDiv input[type=tel],
+html form .inputDiv input[type=text],
+html form .inputDiv input[type=time],
+html form .inputDiv input[type=url],
+html form .inputDiv input[type=week],
+html form .inputDiv textarea,
+html form .inputDiv select,
+html form .inputDiv datalist {
+  width: 100%;
+  min-width: 200px;
+  max-width: 600px;
+  padding: .7rem;
+  font-family: "Poppins", sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #101011;
+  background-color: #fff;
+  border: 1px solid #eef0f7;
+  border-radius: .25rem;
+  letter-spacing: .75px;
+  transition: all .5s
+}
+
+html form .inputDiv input[type=date]::placeholder,
+html form .inputDiv input[type=datetime-local]::placeholder,
+html form .inputDiv input[type=email]::placeholder,
+html form .inputDiv input[type=file]::placeholder,
+html form .inputDiv input[type=hidden]::placeholder,
+html form .inputDiv input[type=month]::placeholder,
+html form .inputDiv input[type=number]::placeholder,
+html form .inputDiv input[type=password]::placeholder,
+html form .inputDiv input[type=range]::placeholder,
+html form .inputDiv input[type=search]::placeholder,
+html form .inputDiv input[type=tel]::placeholder,
+html form .inputDiv input[type=text]::placeholder,
+html form .inputDiv input[type=time]::placeholder,
+html form .inputDiv input[type=url]::placeholder,
+html form .inputDiv input[type=week]::placeholder,
+html form .inputDiv textarea::placeholder,
+html form .inputDiv select::placeholder,
+html form .inputDiv datalist::placeholder {
+  color: #909294;
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: 0px
+}
+
+html form .inputDiv input[type=date]:hover,
+html form .inputDiv input[type=datetime-local]:hover,
+html form .inputDiv input[type=email]:hover,
+html form .inputDiv input[type=file]:hover,
+html form .inputDiv input[type=hidden]:hover,
+html form .inputDiv input[type=month]:hover,
+html form .inputDiv input[type=number]:hover,
+html form .inputDiv input[type=password]:hover,
+html form .inputDiv input[type=range]:hover,
+html form .inputDiv input[type=search]:hover,
+html form .inputDiv input[type=tel]:hover,
+html form .inputDiv input[type=text]:hover,
+html form .inputDiv input[type=time]:hover,
+html form .inputDiv input[type=url]:hover,
+html form .inputDiv input[type=week]:hover,
+html form .inputDiv textarea:hover,
+html form .inputDiv select:hover,
+html form .inputDiv datalist:hover {
+  background-color: #fbfbff;
+  border: 1px solid #b4d6ee
+}
+
+html form .inputDiv input[type=date]:active,
+html form .inputDiv input[type=datetime-local]:active,
+html form .inputDiv input[type=email]:active,
+html form .inputDiv input[type=file]:active,
+html form .inputDiv input[type=hidden]:active,
+html form .inputDiv input[type=month]:active,
+html form .inputDiv input[type=number]:active,
+html form .inputDiv input[type=password]:active,
+html form .inputDiv input[type=range]:active,
+html form .inputDiv input[type=search]:active,
+html form .inputDiv input[type=tel]:active,
+html form .inputDiv input[type=text]:active,
+html form .inputDiv input[type=time]:active,
+html form .inputDiv input[type=url]:active,
+html form .inputDiv input[type=week]:active,
+html form .inputDiv textarea:active,
+html form .inputDiv select:active,
+html form .inputDiv datalist:active {
+  border: 1px solid #97d4ff;
+  background-color: #fbfbff
+}
+
+html form .inputDiv input[type=date]:focus,
+html form .inputDiv input[type=datetime-local]:focus,
+html form .inputDiv input[type=email]:focus,
+html form .inputDiv input[type=file]:focus,
+html form .inputDiv input[type=hidden]:focus,
+html form .inputDiv input[type=month]:focus,
+html form .inputDiv input[type=number]:focus,
+html form .inputDiv input[type=password]:focus,
+html form .inputDiv input[type=range]:focus,
+html form .inputDiv input[type=search]:focus,
+html form .inputDiv input[type=tel]:focus,
+html form .inputDiv input[type=text]:focus,
+html form .inputDiv input[type=time]:focus,
+html form .inputDiv input[type=url]:focus,
+html form .inputDiv input[type=week]:focus,
+html form .inputDiv textarea:focus,
+html form .inputDiv select:focus,
+html form .inputDiv datalist:focus {
+  border: 1px solid #82cbff;
+  background-color: #fbfbff
+}
+
+html form .inputDiv input[type=date]:visited,
+html form .inputDiv input[type=datetime-local]:visited,
+html form .inputDiv input[type=email]:visited,
+html form .inputDiv input[type=file]:visited,
+html form .inputDiv input[type=hidden]:visited,
+html form .inputDiv input[type=month]:visited,
+html form .inputDiv input[type=number]:visited,
+html form .inputDiv input[type=password]:visited,
+html form .inputDiv input[type=range]:visited,
+html form .inputDiv input[type=search]:visited,
+html form .inputDiv input[type=tel]:visited,
+html form .inputDiv input[type=text]:visited,
+html form .inputDiv input[type=time]:visited,
+html form .inputDiv input[type=url]:visited,
+html form .inputDiv input[type=week]:visited,
+html form .inputDiv textarea:visited,
+html form .inputDiv select:visited,
+html form .inputDiv datalist:visited {
+  border: 1px solid #d5edff
+}
+
+html form .inputDiv textarea {
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  overflow: auto
+}
+
+html form .inputDiv input:-webkit-autofill,
+html form .inputDiv input:-webkit-autofill:hover,
+html form .inputDiv input:-webkit-autofill:focus input:-webkit-autofill,
+html form .inputDiv textarea:-webkit-autofill,
+html form .inputDiv textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+html form .inputDiv select:-webkit-autofill,
+html form .inputDiv select:-webkit-autofill:hover,
+html form .inputDiv select:-webkit-autofill:focus {
+  outline: 0 none;
+  background: #fff;
+  -webkit-text-fill-color: inherit !important;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s
+}
+
+html form .inputDiv [type=checkbox],
+html form .inputDiv [type=radio],
+html form .inputDiv [type=checkbox],
+html form .inputDiv [type=date],
+html form .inputDiv [type=datetime],
+html form .inputDiv [type=datetime-local],
+html form .inputDiv [type=email],
+html form .inputDiv [type=month],
+html form .inputDiv [type=number],
+html form .inputDiv [type=password],
+html form .inputDiv [type=search],
+html form .inputDiv [type=tel],
+html form .inputDiv [type=text],
+html form .inputDiv [type=time],
+html form .inputDiv [type=url],
+html form .inputDiv [type=week],
+html form .inputDiv textarea,
+html form .inputDiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%
+}
+
+html form .inputDiv [type=checkbox]:focus,
+html form .inputDiv [type=radio]:focus,
+html form .inputDiv [type=checkbox]:focus,
+html form .inputDiv [type=date]:focus,
+html form .inputDiv [type=datetime]:focus,
+html form .inputDiv [type=datetime-local]:focus,
+html form .inputDiv [type=email]:focus,
+html form .inputDiv [type=month]:focus,
+html form .inputDiv [type=number]:focus,
+html form .inputDiv [type=password]:focus,
+html form .inputDiv [type=search]:focus,
+html form .inputDiv [type=tel]:focus,
+html form .inputDiv [type=text]:focus,
+html form .inputDiv [type=time]:focus,
+html form .inputDiv [type=url]:focus,
+html form .inputDiv [type=week]:focus,
+html form .inputDiv textarea:focus,
+html form .inputDiv select:focus {
+  outline: 0
+}
+
+html form .inputDiv input::-webkit-outer-spin-button,
+html form .inputDiv input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+html form .inputDiv input[type=number] {
+  -moz-appearance: textfield
+}
+
+html form .inputDiv input[type=number]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #5d5e5f
+}
+
+html form .inputBox {
+  display: flex;
+  justify-content: space-between
+}
+
+html form .btn {
+  border-radius: .25rem !important
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+
+  html form input[type=checkbox],
+  html form input[type=radio] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background .3s, border-color .3s, box-shadow .2s
+  }
+
+  html form input[type=checkbox]:after,
+  html form input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s)
+  }
+
+  html form input[type=checkbox]:checked,
+  html form input[type=radio]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2)
+  }
+
+  html form input[type=checkbox]:disabled,
+  html form input[type=radio]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: .9
+  }
+
+  html form input[type=checkbox]:disabled:checked,
+  html form input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border)
+  }
+
+  html form input[type=checkbox]:disabled+label,
+  html form input[type=radio]:disabled+label {
+    cursor: not-allowed
+  }
+
+  html form input[type=checkbox]:hover:not(:checked):not(:disabled),
+  html form input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover)
+  }
+
+  html form input[type=checkbox]:focus,
+  html form input[type=radio]:focus {
+    box-shadow: 0 0 0 var(--focus)
+  }
+
+  html form input[type=checkbox]:not(.switch),
+  html form input[type=radio]:not(.switch) {
+    width: 21px;
+    min-width: 21px
+  }
+
+  html form input[type=checkbox]:not(.switch):after,
+  html form input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0)
+  }
+
+  html form input[type=checkbox]:not(.switch):checked,
+  html form input[type=radio]:not(.switch):checked {
+    --o: 1
+  }
+
+  html form input[type=checkbox]+label,
+  html form input[type=radio]+label {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px
+  }
+
+  html form input[type=checkbox]:not(.switch) {
+    border-radius: 7px
+  }
+
+  html form input[type=checkbox]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 6px;
+    top: 2.5px;
+    transform: rotate(var(--r, 20deg))
+  }
+
+  html form input[type=checkbox]:not(.switch):checked {
+    --r: 43deg
+  }
+
+  html form input[type=checkbox].switch {
+    width: 38px;
+    border-radius: 11px
+  }
+
+  html form input[type=checkbox].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    transform: translateX(var(--x, 0))
+  }
+
+  html form input[type=checkbox].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px
+  }
+
+  html form input[type=checkbox].switch:disabled:not(:checked):after {
+    opacity: .6
+  }
+
+  html form input[type=radio] {
+    border-radius: 50%
+  }
+
+  html form input[type=radio]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    transform: scale(var(--s, 0.7))
+  }
+
+  html form input[type=radio]:checked {
+    --s: .5
+  }
+}
+
+html #inputMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 666;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0)
+}
+
+html #inputMask .inputDiv {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0 0 0 0;
+  box-shadow: rgba(0, 0, 0, .04) 0px 3px 5px
+}
+
+html #inputMask .inputDiv #inputMaskTextArea {
+  border: 1px solid #ebedf3;
+  width: 300px;
+  min-height: 100px;
+  max-height: 300px;
+  color: #242323;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: .75rem;
+  z-index: 999
+}
+
+html #inputMask .inputDiv #inputMaskButtonArea {
+  width: 100%;
+  padding: .5rem .75rem;
+  text-align: right
+}
+
+html #inputMask .inputDiv #inputMaskButtonArea .btn {
+  margin: 0;
+  margin-left: .5rem
+}
+
+html #inputMask .inputDiv #inputMaskButtonArea #inputMaskClose {
+  background-color: #ff8787
+}
+
+html #inputMask .inputDiv #inputMaskButtonArea #inputMaskUpdate {
+  background-color: #4bb1b1
+}
+
+html .multiSelect .select2 {
+  min-height: 44.3px
+}
+
+html .multiSelect .select2-container .selection {
+  min-height: 44.3px
+}
+
+html .multiSelect .select2-container .selection .select2-selection {
+  min-height: 100%;
+  padding: 0 !important;
+  border: 1px solid #eef0f7 !important
+}
+
+html .multiSelect .select2-container .selection .select2-selection__rendered {
+  margin-top: .7rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important
+}
+
+html .multiSelect .select2-container .selection .select2-selection__rendered:empty {
+  margin-top: 0 !important
+}
+
+html .multiSelect .select2-container .selection .select2-selection__rendered .select2-selection__choice {
+  display: flex !important;
+  align-items: center;
+  padding: .5rem !important;
+  background-color: #fcfcfc !important;
+  border: 1px solid #ebedf3 !important
+}
+
+html .multiSelect .select2-container .selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  position: relative !important;
+  order: 2;
+  border: none !important;
+  color: #f9b50a !important;
+  margin-left: .5rem !important;
+  font-size: 1.563rem !important;
+  font-weight: 400 !important
+}
+
+html .multiSelect .select2-container .selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
+  color: #f9b50a !important;
+  order: 1
+}
+
+html .multiSelect .select2-container .selection textarea {
+  min-height: 43px !important;
+  margin: 0 !important;
+  padding: .7rem !important;
+  font-family: "Poppins", sans-serif !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection--multiple {
+  padding: 0 !important;
+  padding-right: 50px !important;
+  border: 1px solid #eef0f7 !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection__rendered {
+  margin-top: .7rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection__rendered:empty {
+  margin-top: 0 !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection__rendered .select2-selection__choice {
+  display: flex !important;
+  align-items: center;
+  padding: .5rem !important;
+  background-color: #fcfcfc !important;
+  border: 1px solid #ebedf3 !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  position: relative !important;
+  order: 2;
+  border: none !important;
+  color: #f9b50a !important;
+  margin-left: .5rem !important;
+  font-size: 1.563rem !important;
+  font-weight: 400 !important
+}
+
+html .multiSearch .select2-container .selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
+  color: #f9b50a !important;
+  order: 1
+}
+
+html .multiSearch .select2-container .selection textarea {
+  min-height: 43px !important;
+  margin: 0 !important;
+  padding: .7rem !important;
+  font-family: "Poppins", sans-serif !important
+}
+
+html .multiSearch button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: .73rem 1rem;
+  background-color: #fcfcfc;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .multiSearch button:hover {
+  background-color: #f9b50a
+}
+
+html .multiSearch button:hover i {
+  color: #fff
+}
+
+html .multiSearch button i {
+  color: #f9b50a;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .search {
+  max-width: 600px;
+  overflow: hidden;
+  display: flex
+}
+
+html .search input {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  padding: .7rem 1rem;
+  border: none;
+  padding-right: 46px !important
+}
+
+html .search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: .75rem 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .search button:hover {
+  background-color: #fcfcfc;
+  border: 1px solid #ebedf3
+}
+
+html .search button:hover i {
+  color: #f9b50a
+}
+
+html .search button i {
+  color: #eaedf7;
+  font-size: 1.563rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .dataList {
+  max-width: 600px
+}
+
+html .dataList .inputBox button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: .75rem 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: .25rem;
+  pointer-events: none;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .dataList .inputBox button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: .25rem
+}
+
+html .dataList .inputBox button i {
+  color: #eaedf7;
+  font-size: 1.563rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .customInput {
+  max-width: 600px
+}
+
+html .customInput .moreBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .75rem;
+  border-radius: .25rem;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .customInput .moreBtn .btnMenu {
+  top: unset !important;
+  bottom: 100%
+}
+
+html .uploadInput:hover .inputBox {
+  border: 1px dashed #82cbff
+}
+
+html .uploadInput:hover .inputBox label {
+  color: #eaedf7
+}
+
+html .uploadInput .inputBox {
+  border: 1px dashed #b4d6ee;
+  border-radius: .25rem;
+  overflow: hidden;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .uploadInput .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9b50a;
+  pointer-events: none;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .uploadInput .inputBox label i {
+  margin-right: .5rem;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .uploadInput .inputBox input {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer
+}
+
+html .userPicUpload {
+  margin-right: 1rem;
+  padding-top: .4rem
+}
+
+html .userPicUpload label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-bottom: .5rem
+}
+
+html .userPicUpload .profilePhoto {
+  display: block;
+  overflow: hidden;
+  border-radius: 0;
+  width: 102px;
+  height: 102px;
+  min-height: 102px;
+  object-fit: contain;
+  overflow: hidden;
+  border: 1px dashed #b4d6ee;
+  transition: all .3s
+}
+
+html .userPicUpload .profilePhoto:hover {
+  background-color: #fbfbff;
+  border: 1px dashed #82cbff
+}
+
+html .userPicUpload .profilePhoto input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer
+}
+
+html .userPicUpload .profilePhoto img {
+  display: block;
+  width: 100%;
+  cursor: pointer
+}
+
+html .inputEditor .ql-toolbar.ql-snow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ebedf3;
+  border-radius: .25rem
+}
+
+html .inputEditor textarea {
+  height: 200px;
+  border: 1px solid #eef0f7 !important;
+  padding-bottom: 3.052rem !important
+}
+
+html .radioBtn {
+  max-width: 600px;
+  padding-top: .5rem !important
+}
+
+html .radioBtn label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-bottom: .5rem
+}
+
+html .radioBtn ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .75rem
+}
+
+html .radioBtn ul li label {
+  margin: 0;
+  margin-left: .5rem
+}
+
+html .radioBtnRow {
+  max-width: 600px
+}
+
+html .radioBtnRow label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-bottom: .5rem
+}
+
+html .radioBtnRow ul {
+  display: flex
+}
+
+html .radioBtnRow ul li {
+  display: flex;
+  align-items: center;
+  margin-right: .75rem
+}
+
+html .radioBtnRow ul li label {
+  margin: 0;
+  margin-left: .5rem
+}
+
+html .checkbox {
+  max-width: 600px;
+  padding-top: .5rem !important
+}
+
+html .checkbox label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-bottom: .5rem
+}
+
+html .checkbox ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .75rem
+}
+
+html .checkbox ul li label {
+  margin: 0;
+  margin-left: .5rem
+}
+
+html .checkboxRow {
+  max-width: 600px
+}
+
+html .checkboxRow label {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-bottom: .5rem
+}
+
+html .checkboxRow ul {
+  display: flex
+}
+
+html .checkboxRow ul li {
+  display: flex;
+  align-items: center;
+  margin-right: .75rem
+}
+
+html .checkboxRow ul li label {
+  margin: 0;
+  margin-left: .5rem
+}
+
+html .switchBtn {
+  max-width: 600px;
+  display: flex;
+  align-items: center
+}
+
+html .switchBtn label {
+  position: relative;
+  top: 0;
+  left: 0
+}
+
+html #reportrange {
+  height: 46px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: .7rem;
+  border-radius: .25rem;
+  border: 1px solid #ebedf3;
+  font-size: .8rem;
+  cursor: pointer
+}
+
+html #reportrange i {
+  color: #b2bbd2;
+  cursor: pointer
+}
+
+html #reportrange .value {
+  margin: 0 .5rem;
+  margin-right: auto;
+  cursor: pointer
+}
+
+html .checkboxSection label {
+  z-index: 3
+}
+
+html .checkboxSection .checkboxMain .checkboxField {
+  color: #f9b50a;
+  font-size: .8rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #eef0f7;
+  border-radius: .25rem;
+  padding: .75rem 1rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .checkboxSection .checkboxMain .checkboxField:hover {
+  background-color: #fcfcfc
+}
+
+html .checkboxSection .checkboxMain .checkboxField::placeholder {
+  font-size: .8rem;
+  font-weight: 400;
+  color: #242323
+}
+
+html .checkboxSection .checkboxMain .checkboxListDivIntro {
+  display: block !important;
+  box-shadow: rgba(17, 12, 46, .15) 0px 48px 100px 0px !important;
+  padding-top: .5rem
+}
+
+html .checkboxSection .checkboxMain .checkboxListDiv {
+  display: none;
+  width: 100%;
+  min-width: 200px;
+  max-width: 600px;
+  min-width: max-content;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  margin-top: -0.5rem;
+  background-color: #fff;
+  text-align: left;
+  border: 1px solid #ebedf3;
+  border-radius: 0 0 0 0;
+  overflow: hidden;
+  box-shadow: rgba(17, 12, 46, 0) 0px 48px 100px 0px
+}
+
+html .checkboxSection .checkboxMain .checkboxListDiv li {
+  display: flex;
+  align-items: center;
+  padding: .25rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #fcfcfc;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .checkboxSection .checkboxMain .checkboxListDiv li:hover label {
+  color: #101011
+}
+
+html .checkboxSection .checkboxMain .checkboxListDiv li input {
+  z-index: 2
+}
+
+html .checkboxSection .checkboxMain .checkboxListDiv li label {
+  z-index: 1;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0);
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .checkboxSection .checkboxMain .checkboxClose {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2
+}
+
+html .moreBtn {
+  display: inline-block;
+  cursor: pointer
+}
+
+html .moreBtn:hover .btnMenu {
+  display: block
+}
+
+html .moreBtn i {
+  display: inline-block;
+  cursor: pointer
+}
+
+html .btnMenu {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  z-index: 110;
+  display: none;
+  background-color: #fff;
+  border-radius: .25rem;
+  border: 1px solid #ebedf3;
+  text-align: left;
+  box-shadow: rgba(50, 50, 93, .13) 0px 30px 60px -12px, rgba(0, 0, 0, .137) 0px 18px 36px -18px
+}
+
+html .btnMenu #statusChange {
+  width: 100%;
+  min-width: 100px;
+  font-family: "Poppins", sans-serif;
+  color: #101011;
+  font-size: .512rem;
+  font-weight: 500;
+  padding: .5rem;
+  background-color: #fff;
+  border: 1px solid #ebedf3;
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .btnMenu #statusChange:hover {
+  background-color: #fff;
+  border: 1px solid #4ac434
+}
+
+html .btnMenu a {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  margin: 0;
+  color: #242323;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .btnMenu a:hover {
+  color: #f9b50a;
+  background-color: #fcfcfc
+}
+
+html .btnMenu a:nth-child(1) {
+  padding-top: 1rem
+}
+
+html .btnMenu a:nth-last-child(1) {
+  padding-bottom: 1rem
+}
+
+html .btnMenu a i {
+  font-size: .41rem;
+  line-height: 1;
+  margin-right: .75rem
+}
+
+html .labelMovingAnimation {
+  display: block;
+  margin-bottom: 1rem
+}
+
+html .labelMovingAnimation label {
+  pointer-events: none;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin: 0
+}
+
+html .labelMovingAnimation input:placeholder-shown+label {
+  top: 1rem;
+  left: 1rem;
+  color: #2a96d3;
+  font-size: .9rem;
+  font-weight: 400
+}
+
+html .labelMovingAnimation input:not(:placeholder-shown)~label {
+  top: 1rem;
+  left: 1rem;
+  color: #2a96d3;
+  font-size: .9rem;
+  font-weight: 400
+}
+
+html .labelMovingAnimation textarea:placeholder-shown+label {
+  top: 1rem;
+  left: 1rem;
+  color: #2a96d3;
+  font-size: .9rem;
+  font-weight: 400
+}
+
+html .labelMovingAnimation textarea:not(:placeholder-shown)~label {
+  top: 1rem;
+  left: 1rem;
+  color: #2a96d3;
+  font-size: .9rem;
+  font-weight: 400
+}
+
+html .labelMovingAnimation input:focus+label,
+html .labelMovingAnimation input:not(:placeholder-shown)+label,
+html .labelMovingAnimation textarea:focus+label,
+html .labelMovingAnimation textarea:not(:placeholder-shown)+label {
+  top: -15px;
+  left: 5px;
+  color: #eaedf7;
+  font-size: .8rem;
+  font-weight: 600;
+  background-color: #fff;
+  padding: .5rem
+}
+
+html .dropDownDiv {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto
+}
+
+html .dropDownDiv .dropBoxTitle {
+  color: #101011;
+  font-weight: 500
+}
+
+html .dropDownDiv .dropList {
+  display: block
+}
+
+html .dropDownDiv .dropList .dropBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #242323;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1);
+  cursor: pointer
+}
+
+html .dropDownDiv .dropList .dropBox:hover {
+  color: #2a96d3
+}
+
+html .dropDownDiv .dropList .dropBox:hover span i {
+  color: #eaedf7
+}
+
+html .dropDownDiv .dropList .dropBox .moreBtn {
+  margin-left: auto;
+  padding: 1rem
+}
+
+html .dropDownDiv .dropList .dropBox span {
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .dropDownDiv .dropList .dropBox span i {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .6s cubic-bezier(0.37, 0, 0.63, 1)
+}
+
+html .dropDownDiv .dropList .dropBox span .dropRemove {
+  display: none
+}
+
+html .dropDownDiv .dropList .dropContent {
+  display: none;
+  width: 100%
+}
+
+/*# sourceMappingURL=common.css.map */
+
+
+
+
+#Features article .card {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.441rem;
+}
+#Features article .card p {
+  color: #5d5e5f;
+  line-height: 1.6;
+}

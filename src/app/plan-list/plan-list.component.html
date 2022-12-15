@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col" *ngFor="let package of packagedata.plans let i = index; ">
+            <div class="card mb-4 rounded-3 shadow-sm zoom">
+                <div class=" py-3 pricing-card-title text-uppercase">
+                    <!-- <h4 class="my-0 fw-normal">{{package.name}}</h4> -->
+                    <div class="my-0 fw-normal fs-1" [innerHtml]="package.headerDisplayHtml | safe: 'html'"></div>
+                </div>
+                <div class="card-body">
+                    <!-- <div class="card-title pricing-card-title" [innerHtml]="package.priceDisplayHTML | safe: 'html'">
+              </div>  -->
+                    <div class="card-title pricing-card-title fw-bold fs-2">
+                        <!-- {{package.frequency}}
+                <small class="text-muted fw-light">/{{package.frequency}}</small> -->
+                        {{package.priceDisplayHTML}}
+                    </div>
+
+                    <div class="card-title pricing-card-title1">
+                        Billed {{package.frequency}}
+                    </div>
+
+                    <div class="card-title pricing-card-title">
+                         {{package. descriptionDisplayHtml}}
+                    </div>
+                   
+
+                    <!-- <hr /> -->
+                    <!-- <div class="card-title pricing-card-title" [innerHtml]=  "package.frequency | safe: 'html'">
+              </div>  -->
+
+                    <!-- <div class="card-title pricing-card-title" [innerHtml]=  "package.frequency | safe: 'html'">
+              </div>  -->
+
+
+
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                    <div class="row pb-1 d-flex justify-content-center" >
+                        <button style="width:60%" class="btn btn-info btn-rounded" *ngIf="package.trailAllowed == true"
+                        (click)="onTrialSubscribeClick(package.planId,package.frequency)">
+                            <div [innerHtml]="package.trialButtonText | safe: 'html'">
+                            </div>
+                        </button>
+                    </div>
+                   
+                    <div class="row  pb-1 d-flex justify-content-center" >
+                        <button (click)="onSubscribeClick(package.planId,package.frequency)"  style="width:60%" class="btn btn-primary btn-rounded">
+                            <div [innerHtml]="package.subscribeButtonText | safe: 'html'">
+                            </div>
+                        </button>
+                    </div>
+                    <hr />
+                    <h3 class="card-title pricing-card-title">Features</h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li *ngFor="let feature of package.features">{{feature.featureName}}</li>
+                    </ul>
+                    <hr />
+                    <h3 class="card-title pricing-card-title">Package Contains</h3>
+                    <div *ngIf="package.resources && package.resources.length > 0">
+                        <div class="row" *ngFor="let resources of package.resources">
+                            <div class="col text-center">
+                                {{resources.resourceName}} - {{resources.value}} {{resources.uomName}}
+                            </div>
+                            <!-- <div  class="col">
+                        <span>{{resources.value}}</span>
+                        <span >{{resources.uomName}}</span>
+                    </div   > -->
+                        </div>
+                    </div>
+                    <!-- {{package |json}} -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
